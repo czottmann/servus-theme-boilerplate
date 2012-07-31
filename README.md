@@ -1,8 +1,8 @@
 # Droplings: Theme Boilerplate
 
-[Droplings](droplings) is a Mac app to make quick-fire sharing via your [Dropbox account][dropbox] easier and more comfortable.  Its preferences allow you to specify a custom theme for rendering your shared files' preview pages.
+[Droplings][droplings] is a Mac app to make quick-fire sharing via your [Dropbox account][dropbox] easier and more comfortable.  Its preferences allow you to specify a custom theme for rendering your shared files' preview pages.
 
-This repository contains a bare-bones theme starter kit: a [`index.html`][index-html] with all the available placeholders.  Feel free to use it as boilerplate for your custom themes.
+This repository contains a bare-bones theme starter kit: a `index.html` with all the available placeholders.  Feel free to use it as boilerplate for your custom themes.
 
 
 ## Templating Engine
@@ -14,7 +14,7 @@ Droplings is making use of [Mustache][mustache], a well-known logic-less templat
 
 The templating process goes like this:
 
-  1. All non-`.html` files will be copied verbatim to the target folder (`~/Dropbox/Public/share/YYYY-MM/…/`).
+  1. All non-`.html` files will be copied verbatim to the target folder (`Dropbox/Public/share/YYYY-MM/…/`).
   2. All `.html` files will be processed by the templating engine.  The resulting files will be written to the target folder (using their original names, i.e. an `index.html` with placeholders in your theme folder will result in an `index.html` filled with live data in the target folder).
   3. The shared file will be copied to a `f` subfolder in the target directory; its name will be normalized a bit.
   
