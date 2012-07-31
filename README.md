@@ -4,6 +4,9 @@
 
 This repository contains a bare-bones theme starter kit: a `index.html` with all the available placeholders.  Feel free to use it as boilerplate for your custom themes.
 
+- [Download starter kit as ZIP file](https://github.com/carlo/droplings-theme-boilerplate/zipball/master)
+- [Show starter kit repo on Github](https://github.com/carlo/droplings-theme-boilerplate)
+
 
 ## Templating Engine
 
