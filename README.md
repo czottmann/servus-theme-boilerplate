@@ -1,31 +1,54 @@
 # Droplings: Theme Boilerplate
 
-[Droplings][droplings] is a Mac app to make quick-fire sharing via your [Dropbox account][dropbox] easier and more comfortable.  Its preferences allow you to specify a custom theme for rendering your shared files' preview pages.
+[Droplings][droplings] is a Mac app to make quick-fire sharing via your 
+[Dropbox account][dropbox] easier and more comfortable.  Its preferences allow
+you to specify a custom theme for rendering your shared files' preview pages.
 
-This repository contains a bare-bones theme starter kit: a `index.html` with all the available placeholders.  Feel free to use it as boilerplate for your custom themes.
+This repository contains a bare-bones theme starter kit: a `index.html` with 
+all the available placeholders.  Feel free to use it as boilerplate for your 
+custom themes.
 
-- [Download starter kit as ZIP file](https://github.com/carlo/droplings-theme-boilerplate/zipball/master)
-- [Show starter kit repo on Github](https://github.com/carlo/droplings-theme-boilerplate)
+
+## How to get started
+
+  1. Either [download starter kit as ZIP file][boilerplate-zip] **or** 
+    [fork the starter kit repo on Github][boilerplate-github].
+  2. tell Droplings to use the folder with the `index.html` in it as custom
+    theme folder (Droplings ➔   Preferences ➔ Theme ➔ Use custom theme…)
+  3. Edit the `index.html` as you see fit, drop files onto the Droplings icon
+    to see your changes.
 
 
 ## Templating Engine
 
-Droplings is making use of [Mustache][mustache], a well-known logic-less templating engine.  You can find all you need to know about its syntax on the [Mustache website][mustache].
+Droplings is making use of [Mustache][mustache], a well-known logic-less 
+templating engine.  You can find all you need to know about its syntax on the 
+[Mustache website][mustache].
 
 
 ## Theme Workflow
 
 The templating process goes like this:
 
-  1. All non-`.html` files will be copied verbatim to the target folder (`Dropbox/Public/share/YYYY-MM/…/`).
-  2. All `.html` files will be processed by the templating engine.  The resulting files will be written to the target folder (using their original names, i.e. an `index.html` with placeholders in your theme folder will result in an `index.html` filled with live data in the target folder).
-  3. The shared file will be copied to a `f` subfolder in the target directory; its name will be normalized a bit.
+  1. All non-`.html` files will be copied verbatim to the target folder 
+    (`Dropbox/Public/share/YYYY-MM/…/`).
+  2. All `.html` files will be processed by the templating engine.  The 
+    resulting files will be written to the target folder (using their original 
+    names, i.e. an `index.html` with placeholders in your theme folder will 
+    result in an `index.html` filled with live data in the target folder).
+  3. The shared file will be copied to a `f` subfolder in the target directory;
+    its name will be normalized a bit.
   
-A few notes:
+
+## Important!
 
   - Your theme **must** contain an `index.html`.
-  - Droplings will ignore subfolders.  Only files in the root folder of your theme are recognized.
-  - There's no reason why your theme can't sport more than one HTML file and/or JS files.  The templating engine won't replace placeholders in JS files, tho, so if you want to set JS variables, do so in a `<script>` block in the HTML file prior to loading your external JS file.
+  - Droplings will ignore subfolders.  Only files in the root folder of your 
+    theme are recognized.
+  - There's no reason why your theme can't sport more than one HTML file and/or 
+    JS files.  The templating engine won't replace placeholders in JS files, 
+    tho, so if you want to set JS variables, do so in a `<script>` block in 
+    the HTML file prior to loading your external JS file.
     
 
 ## Template Placeholders
@@ -56,9 +79,11 @@ Here's a list of available template keys/variables with their meaning.
 
 ## Legal
 
-The Droplings Default Theme are copyright © 2012 Carlo Zottmann, [municode.de](http://municode.de/), carlo@municode.de.
+The Droplings Default Theme are copyright © 2012 Carlo Zottmann, 
+[municode.de](http://municode.de/), carlo@municode.de.
 
-3rd party libraries and code (listed below) expressively excluded, the Droplings Default Theme (this here repository) is licensed under the WTFPL v2.
+The Droplings Theme Boilerplate (this here repository) is licensed under the
+WTFPL v2.
 
                DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                        Version 2, December 2004
@@ -79,3 +104,5 @@ The Droplings Default Theme are copyright © 2012 Carlo Zottmann, [municode.de](
 [dropbox]: http://db.tt/T84kkEv
 [droplings]: http://droplings.com
 [mustache]: http://mustache.github.com/
+[boilerplate-github]: https://github.com/carlo/droplings-theme-boilerplate
+[boilerplate-zip]: https://github.com/carlo/droplings-theme-boilerplate/zipball/master
