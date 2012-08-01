@@ -16,15 +16,15 @@
       <li>Normalized file extension: {{file_ext}}</li>
       <li>Short URL: {{short_url}}</li>
 
-      <li>the file is an archive (zip, tgz, rar etc.): {{is_archive}} YES {{/is_archive}}</li>
-      <li>the file is an audio file (mp3, m4a, wav etc.): {{is_audio}} YES {{/is_audio}}</li>
-      <li>the file is a vcard file: {{is_contact}} YES {{/is_contact}}</li>
-      <li>the file is an image (png, jpg, tiff, gif etc.): {{is_image}} YES {{/is_image}}</li>
-      <li>the file is a recognized message (email, IM, and so on): {{is_message}} YES {{/is_message}}</li>
-      <li>the file is a mixed content file, i.e. a PDF.: {{is_pdf}} YES {{/is_pdf}}</li>
-      <li>the file is text document (html, rtf, mdown etc.): {{is_text}} YES {{/is_text}}</li>
-      <li>the file is a video (mov, mpg etc.): {{is_video}} YES {{/is_video}}</li>
-      <li>the file wasn't recognized as one of the types listed above: {{is_unknown_type}} YES {{/is_unknown_type}}</li>
+      <li>the file is an archive (zip, tgz, rar etc.): {{#is_archive}} YES {{/is_archive}}</li>
+      <li>the file is an audio file (mp3, m4a, wav etc.): {{#is_audio}} YES {{/is_audio}}</li>
+      <li>the file is a vcard file: {{#is_contact}} YES {{/is_contact}}</li>
+      <li>the file is an image (png, jpg, tiff, gif etc.): {{#is_image}} YES {{/is_image}}</li>
+      <li>the file is a recognized message (email, IM, and so on): {{#is_message}} YES {{/is_message}}</li>
+      <li>the file is a mixed content file, i.e. a PDF.: {{#is_pdf}} YES {{/is_pdf}}</li>
+      <li>the file is text document (html, rtf, mdown etc.): {{#is_text}} YES {{/is_text}}</li>
+      <li>the file is a video (mov, mpg etc.): {{#is_video}} YES {{/is_video}}</li>
+      <li>the file wasn't recognized as one of the types listed above: {{#is_unknown_type}} YES {{/is_unknown_type}}</li>
 
     </ul>
   </body>
