@@ -43,6 +43,7 @@ The templating process goes like this:
 ## Important!
 
   - Your theme **must** contain an `index.html`.
+  - The templating engine expects UTF-8 encoded files.
   - Droplings will ignore subfolders.  Only files in the root folder of your 
     theme are recognized.
   - There's no reason why your theme can't sport more than one HTML file and/or 
