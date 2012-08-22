@@ -1,6 +1,6 @@
-# Droplings: Theme Boilerplate
+# Servus: Theme Boilerplate
 
-[Droplings][droplings] is a Mac app to make quick-fire sharing via your 
+[Servus][servus] is a Mac app to make quick-fire sharing via your 
 [Dropbox account][dropbox] easier and more comfortable.  Its preferences allow
 you to specify a custom theme for rendering your shared files' preview pages.
 
@@ -13,15 +13,15 @@ custom themes.
 
   1. Either [download starter kit as ZIP file][boilerplate-zip] **or** 
     [fork the starter kit repo on Github][boilerplate-github].
-  2. tell Droplings to use the folder with the `index.html` in it as custom
-    theme folder (Droplings ➔   Preferences ➔ Theme ➔ Use custom theme…)
-  3. Edit the `index.html` as you see fit, drop files onto the Droplings icon
+  2. tell Servus to use the folder with the `index.html` in it as custom
+    theme folder (Servus ➔   Preferences ➔ Theme ➔ Use custom theme…)
+  3. Edit the `index.html` as you see fit, drop files onto the Servus icon
     to see your changes.
 
 
 ## Templating Engine
 
-Droplings is making use of [Mustache][mustache], a well-known logic-less 
+Servus is making use of [Mustache][mustache], a well-known logic-less 
 templating engine.  You can find all you need to know about its syntax on the 
 [Mustache website][mustache].
 
@@ -44,7 +44,7 @@ The templating process goes like this:
 
   - Your theme **must** contain an `index.html`.
   - The templating engine expects UTF-8 encoded files.
-  - Droplings will ignore subfolders.  Only files in the root folder of your 
+  - Servus will ignore subfolders.  Only files in the root folder of your 
     theme are recognized.
   - There's no reason why your theme can't sport more than one HTML file and/or 
     JS files.  The templating engine won't replace placeholders in JS files, 
@@ -80,10 +80,10 @@ Here's a list of available template keys/variables with their meaning.
 
 ## Legal
 
-The Droplings Default Theme are copyright © 2012 Carlo Zottmann, 
+The Servus Default Theme are copyright © 2012 Carlo Zottmann, 
 [municode.de](http://municode.de/), carlo@municode.de.
 
-The Droplings Theme Boilerplate (this here repository) is licensed under the
+The Servus Theme Boilerplate (this here repository) is licensed under the
 WTFPL v2.
 
                DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
@@ -103,7 +103,7 @@ WTFPL v2.
 
 
 [dropbox]: http://db.tt/T84kkEv
-[droplings]: http://droplings.com
+[servus]: http://servus.io
 [mustache]: http://mustache.github.com/
-[boilerplate-github]: https://github.com/carlo/droplings-theme-boilerplate
-[boilerplate-zip]: https://github.com/carlo/droplings-theme-boilerplate/zipball/master
+[boilerplate-github]: https://github.com/carlo/servus-theme-boilerplate
+[boilerplate-zip]: https://github.com/carlo/servus-theme-boilerplate/zipball/master
