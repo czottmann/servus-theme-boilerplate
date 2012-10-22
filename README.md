@@ -11,12 +11,21 @@ custom themes.
 
 ## How to get started
 
-  1. Either [download starter kit as ZIP file][boilerplate-zip] **or** 
-    [fork the starter kit repo on Github][boilerplate-github].
-  2. tell Servus to use the folder with the `index.html` in it as custom
-    theme folder (Servus ➔ Preferences ➔ Theme ➔ Use custom theme…)
-  3. Edit the `index.html` as you see fit, drop files onto the Servus icon
-    to see your changes.
+  1. Either [download starter kit as ZIP file][boilerplate-zip] (then unzip
+    it) **or** [fork the starter kit repo on Github][boilerplate-github]. 
+    Store the resulting folder somewhere on the Mac that has Servus installed.
+  2. Tell Servus to use that starter kit folder as custom theme.  To do that,
+    open Servus' Preferences window, go to the _Theme_ section and tick the
+    box labelled _"Use custom theme…"_, then set the theme folder by pressing 
+    the _"Select theme path"_ button.
+  3. Now when you drop a file onto the Servus icon, the app will get its theme
+    files from that starter kit folder.
+  4. To edit your theme, open the starter kit folder and edit the `index.html`
+    as you see fit.  If you want to add new elements like CSS files or 
+    background images, drop them into that same folder and reference them in
+    your HTML and CSS files as usual.  (See the section "Important!" below.
+    It's important!)
+  5. Drop any file onto the Servus menubar icon to see your theme changes.
 
 
 ## Templating Engine
@@ -30,13 +39,16 @@ templating engine.  You can find all you need to know about its syntax on the
 
 The templating process works like this:
 
-  1. All template files will be copied verbatim to a temporary folder.
-  2. All asset files —excluding CSS files and `index.html`— are uploaded
+  1. The contents of your local theme folder will be copied to a temporary
+    folder.
+  2. All asset files in that folder are uploaded.  (Asset files are images,
+    Javascript files, etc. — basically everything that's neither a CSS file
+    nor the `index.html`.)
   3. Shareable links for those files are requested from the Dropbox API.
   4. In the CSS files and `index.html` the original references to the local 
      asset files are replaced with their respective shareable counterparts 
      gathered in step 3.  
-     As an example, let's assume in your CSS file you reference local theme
+     As an example, let's assume in your CSS file you reference a local theme
      file `background-image.jpg`.  Since each file shared via Dropbox gets its
      own unpredictable path name by the Dropbox API, your local reference to
      that file won't work anymore, so Servus is replacing it with the file's
@@ -83,9 +95,17 @@ Here's a list of available template keys/variables with their meaning.
     listed above
   - `is_ext_*`: a "dynamic" placeholder — for example, if the shared file
     is a GIF then the placeholder `is_ext_gif` would be set.
+  - `dropbox_preview_link`: the URL to Dropbox' original preview page for the
+    shared file.  (Servus 1.0+)
 
 
 ## Changelog
+
+### October 22, 2012 — Servus 1.0.1
+
+- Hopefully made the "How to" and "Theme workflow" sections more clear.
+- Added placeholder `dropbox_preview_link`.
+
 
 ### September 15, 2012 — Servus 0.9.12
 
