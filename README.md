@@ -103,9 +103,16 @@ meaning.
   for the shared file.  (Servus 1.0+)
 - `json_data`: all available keys/variables as JSON object.
   Naturally, this is what you want to use when writing Javascript.
+- `preview_image`: the URL to an JPG containing a rendered presentation of
+  your uploaded file.  Max. image size is 512x512px.  (Servus 1.3+)
 
 
 ## Changelog
+
+### May 15, 2013 — Servus 1.3
+
+- Added placeholder `preview_image` (Servus 1.3+).
+
 
 ### January 24, 2013 — Servus 1.2
 
